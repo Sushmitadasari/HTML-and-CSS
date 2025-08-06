@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Container */
+.amazon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(223, 220, 220);
+  padding: 10px 20px;
+  height: 70px;
+}
+
+/* Amazon Logo */
+.logo {
+  height: 45px;
+}
+
+/* Right-side Buttons */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Cart / Buy Buttons */
+.btn {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #111;
+}
+
+.btn:hover {
+  background-color: #ddb347;
+}
+
+/* Dropdown Section */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #232f3e;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  z-index: 10;
+}
+
+.dropdown-content a {
+  padding: 10px 16px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}

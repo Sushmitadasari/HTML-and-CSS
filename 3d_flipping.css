@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grandparent{
+    perspective: 1000px;
+}
+.parent{
+    display:flex;
+    position: relative;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 1s linear;
+    width:400px;
+    height:250px;
+}
+.front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:370px;
+    height:250px;
+    position: absolute;
+    top:0px;
+    background-image:url('eid_background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 1s linear;
+    backface-visibility: hidden;
+    flex-direction: column;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:250px;
+    position: absolute;
+    top:0px;
+    background-color:black;
+    transition: transform 1s linear;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    flex-direction: column;
+}
+.parent:hover{
+    transform: rotateY(180deg);
+}

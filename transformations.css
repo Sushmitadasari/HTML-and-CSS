@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.demo1{
+    width:200px;
+    height:200px;
+    background-color: green;
+    transform:translate(100px,40px);
+    position: absolute;
+    top:30px;
+    left:40px;
+}
+.demo2{
+    width:200px;
+    height:200px;
+    background-color: rgb(66, 19, 255);
+    /* transform: skew(44deg,45deg); */
+    /* transform: scale(3); for zoom purpose */
+    /* transform: rotatez(45deg); */
+    transform: matrix(1,1,0,1,0,0);
+    position: absolute;
+    top:70px;
+    left:400px;
+}

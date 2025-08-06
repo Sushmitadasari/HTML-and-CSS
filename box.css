@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Room</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      perspective: 1000px;
+    }
+
+    .room {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      transform-style: preserve-3d;
+      transform: rotateX(15deg) rotateY(15deg);
+    }
+
+    .wall {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to center, #fff, #e0e0e0);
+      opacity: 0.95;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .back {
+      transform: translateZ(-200px);
+    }
+
+    .left {
+      transform: rotateY(90deg) translateZ(-200px);
+      transform-origin: left;
+    }
+
+    .right {
+      transform: rotateY(-90deg) translateZ(-200px);
+      transform-origin: right;
+    }
+
+    .top {
+      transform: rotateX(90deg) translateZ(-200px);
+      transform-origin: top;
+    }
+
+    .bottom {
+      transform: rotateX(-90deg) translateZ(-200px);
+      transform-origin: bottom;
+    }
+  </style>
+</head>
+<body>
+  <div class="room">
+    <div class="wall back"></div>
+    <div class="wall left"></div>
+    <div class="wall right"></div>
+    <div class="wall top"></div>
+    <div class="wall bottom"></div>
+  </div>
+</body>
+</html>

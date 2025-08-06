@@ -1,0 +1,32 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+.demo{
+    width:220px;
+    height: 70px;
+   text-align: center;
+   font-size: 60px;
+   position: relative;
+   color: black;
+   overflow: hidden;
+   line-height: 70px;
+   border:2px solid black;
+   border-radius: 10% 10%;
+}
+.demo::before{
+    z-index: -2;
+    content: "";
+    position: absolute;
+    background:linear-gradient(to right, red,rgb(193, 97, 97),rgb(128, 3, 3));
+    width: 230px;
+    height: 70px;
+    transform: translateX(-260px);
+    transition: transform 1s linear;
+
+}
+.demo:hover::before{
+    transform: translateX(-25px);
+}

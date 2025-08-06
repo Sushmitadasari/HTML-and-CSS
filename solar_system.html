@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar System</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .solar-system {
+      position: relative;
+      width: 900px;
+      height: 900px;
+    }
+
+    .sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, #ffdd00, #ff9900);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 50px #ffd700;
+      z-index: 10;
+    }
+b
+    .orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid rgb(214, 206, 206);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .rotator {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: center;
+      animation: rotate linear infinite;
+    }
+
+    .planet {
+      border-radius: 50%;
+    }
+
+    /* Orbit Sizes */
+    .orbit1 { width: 140px; height: 140px; }
+    .orbit2 { width: 180px; height: 180px; }
+    .orbit3 { width: 230px; height: 230px; }
+    .orbit4 { width: 280px; height: 280px; }
+    .orbit5 { width: 350px; height: 350px; }
+    .orbit6 { width: 420px; height: 420px; }
+    .orbit7 { width: 490px; height: 490px; }
+    .orbit8 { width: 570px; height: 570px; }
+
+    /* Animation Speeds */
+    .orbit1 .rotator { animation-duration: 4s; }
+    .orbit2 .rotator { animation-duration: 6s; }
+    .orbit3 .rotator { animation-duration: 8s; }
+    .orbit4 .rotator { animation-duration: 10s; }
+    .orbit5 .rotator { animation-duration: 14s; }
+    .orbit6 .rotator { animation-duration: 18s; }
+    .orbit7 .rotator { animation-duration: 22s; }
+    .orbit8 .rotator { animation-duration: 26s; }
+
+    /* Planets positioned from center via translateX */
+    .orbit1 .planet {
+      width: 12px; height: 12px;
+      background: radial-gradient(#ccc, #888);
+      transform: translateX(70px);
+    }
+
+    .orbit2 .planet {
+      width: 16px; height: 16px;
+      background: radial-gradient(#f5deb3, #daa520);
+      transform: translateX(90px);
+    }
+
+    .orbit3 .planet {
+      width: 18px; height: 18px;
+      background: radial-gradient(#1e90ff, #00008b);
+      transform: translateX(115px);
+    }
+
+    .orbit4 .planet {
+      width: 16px; height: 16px;
+      background: radial-gradient(#d2691e, #8b0000);
+      transform: translateX(140px);
+    }
+
+    .orbit5 .planet {
+      width: 28px; height: 28px;
+      background: radial-gradient(#f4a460, #cd853f);
+      transform: translateX(175px);
+    }
+
+    .orbit6 .planet {
+      width: 24px; height: 24px;
+      background: radial-gradient(#f5f5dc, #a0522d);
+      transform: translateX(210px);
+    }
+
+    .orbit7 .planet {
+      width: 22px; height: 22px;
+      background: radial-gradient(#87cefa, #4682b4);
+      transform: translateX(245px);
+    }
+
+    .orbit8 .planet {
+      width: 20px; height: 20px;
+      background: radial-gradient(#4169e1, #00008b);
+      transform: translateX(285px);
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="solar-system">
+    <div class="sun"></div>
+
+    <!-- Mercury -->
+    <div class="orbit orbit1">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Venus -->
+    <div class="orbit orbit2">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Earth -->
+    <div class="orbit orbit3">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Mars -->
+    <div class="orbit orbit4">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Jupiter -->
+    <div class="orbit orbit5">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Saturn -->
+    <div class="orbit orbit6">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Uranus -->
+    <div class="orbit orbit7">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- Neptune -->
+    <div class="orbit orbit8">
+      <div class="rotator">
+        <div class="planet"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

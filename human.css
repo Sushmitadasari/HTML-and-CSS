@@ -1,0 +1,354 @@
+body {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.human {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(249, 234, 214);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+}
+
+.lefteye {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.righteye {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.eyeball1{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+.eyeball2{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+
+.nose {
+    width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #000000;
+  position: absolute;
+    top: 48px;
+    left: 40px;
+}
+
+.smile {
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border-bottom: 4px solid black;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+
+.hair {
+    width: 90px;
+    height: 60px;
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 80px;
+}
+
+.body1 {
+    width: 120px;
+    height: 150px;
+    background-color: #b72005;
+    position: absolute;
+    top: 210px;
+    border-radius: 20px;
+}
+
+.arm1 {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(249, 234, 214);
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+.sleeve1 {
+    width: 60px;
+    height: 32px;
+    background: #b72005;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.hand1 {
+    width: 40px;
+    height: 30px;
+    background: #e0c390;
+    position: absolute;
+    left: 120px;
+}
+
+.finger1 {
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    background-color: #e0c390;
+}
+
+.arm2 {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(249, 234, 214);
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 120px;
+}
+
+.sleeve2 {
+    width: 60px;
+    height: 32px;
+    background: #b72005;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.hand2 {
+    width: 40px;
+    height: 30px;
+    background: #e0c390;
+    position: absolute;
+    right: 120px;
+}
+
+.finger2 {
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    background-color: #e0c390;
+}
+
+.neck {
+    width: 30px;
+    height: 40px;
+    background-color: rgb(249, 234, 214);
+    position: absolute;
+    top: 189px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.belt {
+    width: 100%;
+    height: 13px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.buttons {
+    position: absolute;
+    top: 0px;
+    left: 62px;
+}
+
+.button {
+    width: 5px;
+    height: 5px;
+    background: rgb(7, 2, 2);
+    border-radius: 50%;
+    margin: 8px 0;
+}
+
+.button_line {
+    width: 2px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 58px;
+    background-color: black;
+}
+
+.pocket {
+    width: 25px;
+    height: 30px;
+    background-color: #fdc8c8;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    border-radius: 2px solid black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.pocket_line {
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    z-index: 1;
+    background-color: black;
+}
+
+.pocket-text {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    color: #0a5a19;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+}
+
+.legs {
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    top: 360px;
+    align-items: center;
+    justify-content: center;
+}
+
+.leg1 {
+    width: 25px;
+    height: 120px;
+    background-color: rgb(249, 234, 214);
+    position: absolute;
+    right: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.leg2 {
+    width: 25px;
+    height: 120px;
+    background-color: rgb(249, 234, 214);
+    position: absolute;
+    left: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.short1 {
+    width: 60px;
+    height: 60px;
+    background: #2e5a88;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+}
+
+.short2 {
+    width: 60px;
+    height: 60px;
+    background: #2e5a88;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+}
+
+.sock1 {
+    width: 27px;
+    height: 50px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: #beb7ac;
+    z-index: 1;
+}
+
+.sock2 {
+    width: 27px;
+    height: 50px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #beb7ac;
+    z-index: 1;
+}
+
+.shoe1 {
+    width: 40px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 129px;
+    right: 7px;
+    border-top-right-radius: 50%;
+}
+
+.shoe2 {
+    width: 40px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 129px;
+    left: 7px;
+    border-top-left-radius: 50%;
+}

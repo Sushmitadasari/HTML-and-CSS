@@ -1,0 +1,265 @@
+.sky{
+    width:100%;
+    height:30%;
+    display: flex;
+}
+.cloud{
+    background-color:rgb(7, 177, 245);
+    position:relative;
+}
+.cloud:nth-child(1), .cloud:nth-child(10){
+    width: 250px;
+    height: 90px;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 70%;
+}
+
+.cloud:nth-child(2), .cloud:nth-child(9) {
+    width: 190px;
+    height: 65px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.cloud:nth-child(3), .cloud:nth-child(8){
+    width: 210px;
+    height: 85px;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 65%;
+}
+
+.cloud:nth-child(4), .cloud:nth-child(6), .cloud:nth-child(12) {
+    width: 200px;
+    height: 95px;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+}
+
+.cloud:nth-child(5), .cloud:nth-child(7), .cloud:nth-child(11) {
+    width: 195px;
+    height: 90px;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 65%;
+}
+.sun{
+    width: 150px;
+    height:150px;
+    background-color:orange;
+    box-shadow: 0 0 20px orange;
+    border-radius:50%;
+    position:absolute;
+    right:230px;
+    top:70px;
+}
+.road{
+    display:flex;
+    width:100%;
+    height:33%;
+    background-color: black;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.line{
+    height:10px;
+    background-color: white;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+.line:nth-child(even) {
+    width: 100px;
+  background-color: white;
+}
+
+.line:nth-child(odd) {
+    width:50px;
+  background-color: black; 
+}
+.treebg{
+    width:100%;
+    height:37%;
+}
+.tree {
+  position: absolute;
+  left: 100px;
+  width: 120px;
+  height: 150px;
+  z-index: -1;
+}
+
+.leaf_top,.leaf_left,.leaf_right {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+.leaf_top {
+  top: -10px;
+  left: 30px;
+}
+
+.leaf_left {
+  top: 30px;
+  left: -10px;
+}
+
+.leaf_right {
+  top: 30px;
+  left: 70px;
+}
+
+.stem {
+  width: 30px;
+  height: 160px;
+  background-color: brown;
+  position: absolute;
+  bottom: -120px;
+  left: 66px;
+}
+.stem2 {
+    width: 30px;
+    height: 160px;
+    background-color: brown;
+    position: absolute;
+    bottom: -120px;
+    left: 476px;
+  }
+  .leaf_top1,.leaf_left1,.leaf_right1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    
+  }
+  .leaf_top1 {
+    top: -10px;
+    left: 440px;
+  }
+  
+  .leaf_left1 {
+    top: 30px;
+    left: 400px;
+  }
+  
+  .leaf_right1 {
+    top: 30px;
+    left: 480px;
+  }
+
+
+.Carmain {
+    width: 100%;
+    position: absolute;
+    bottom: 200px;
+    z-index: 20020;
+}
+
+.CarmainDiv {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: flow 5 2 1 linear;
+}
+
+.upperPart {
+    width: 120px;
+    height: 150px;
+    background-color:#e60000;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.middlePart {
+    width: 200px;
+    height: 180px;
+    background-color: #e60000;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tyres {
+    width: 100px;
+    /* height:0px; */
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.tyre1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: black;
+    left: 80px;
+    border: 1px solid white;
+    top: -20px;
+
+}
+
+.tyre2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: black;
+    left: -40px;
+    border: 1px solid white;
+    top: -20px;
+
+}
+
+.uleft {
+    width: 55px;
+    height: 25px;
+    background-color:#bdc3c7;
+    border: 1px solid black;
+    margin: 2px 4px;
+    border-top-left-radius: 10px;
+
+}
+
+.uright {
+    width: 55px;
+    height: 25px;
+    background-color:#bdc3c7;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    margin: 2px 4px;
+}
+
+
+.CarmainDiv {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+marquee {
+    height: 130px;
+}

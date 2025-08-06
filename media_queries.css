@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demo{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+@media(max-width:500px){
+    .demo{
+        display: block;
+    }
+}

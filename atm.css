@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family:Montserrat;
+    position: absolute;
+    top:0px;
+    text-transform: uppercase;
+    font-size:38px;
+}
+h2{
+    font-family:Montserrat;
+    position: absolute;
+    top:40px;
+    text-transform: uppercase;
+}
+.no{
+    font-size: 45px;
+    font-weight: bold;
+    font-family:'Roboto Mono','Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.chip{
+    width:75px;
+    height: 55px;
+    background-image: url(./chip.png);
+    background-size: contain;
+     border-radius: 12px;
+    position: absolute;
+    top: 95px;
+    left:50px;
+    border: 2px solid black;
+}
+.card{
+    width:600px;
+    height:380px;
+    background-image: url(./american_exp_card.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.name{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Roboto Mono','Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 18px;
+    left:30px;
+}

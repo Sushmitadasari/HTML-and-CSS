@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pass {
+    width: 900px;
+    height: 311px;
+    background-image: url(golden_pass.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    position: relative;
+}
+.logo{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    position: absolute;
+    top: 62px;
+    left: 90px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+}
+.thub {
+    position: absolute;
+    top: 235px;
+    left: 260px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    font-size: 22px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    color: orange;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+}
+h1 {
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    color: gold;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 375px;
+    text-transform: uppercase;
+    background: linear-gradient(to top,orange,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p {
+    font-size: 18px;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, #99ffdf, #29eb94);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 80px;
+    left: 280px;
+    line-height: 1.6;
+    width: 380px;
+}
+.hashtag {
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 168px;
+    left: 278px;
+    text-align: right;
+    font-size: 20px;
+    background: linear-gradient(to right, #f6ff00, #ffe311);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fan-text {
+    font-size: 75px;
+    font-weight: 800;
+    background: linear-gradient(to right, #3d217d, #a01569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    position: absolute;
+    top:17px;
+    left:710px;
+}
+.pass-text {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    font-size: 75px;
+    font-weight: 800;
+    background: linear-gradient(to bottom, #3d217d, #a01569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    position: absolute;
+    top:280px;
+    left:690px;
+}
+.barcode {
+    width: 100px;
+    height: 200px;
+    background-image: url(./barcode.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    margin-bottom: 20px;
+    position: absolute;
+    top:90px;
+    left:780px;
+}

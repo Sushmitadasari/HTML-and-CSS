@@ -1,0 +1,13 @@
+/* selects all the childrens of parent(inner childs) */
+/* .parent h1{
+    color: red;
+} */ 
+/* selects  only direct childrens */
+/* .parent > h1{
+    color:red; 
+} */
+/* select the nxt sibiling */
+.parent ~ h1{
+    color:red;
+}
+/* select all the siblings */

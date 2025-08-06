@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Animations</title>
+        <style>
+            .b1{
+                width:200px;
+                height:200px;
+                position: relative;
+                background-color: red;
+                animation-name: myanime1;
+                animation-duration: 2s;
+                animation-iteration-count: 10;
+            }
+            .b2{
+                width:200px;
+                height:200px;
+                position: relative;
+                background-color:black;
+                animation-name: myanime2;
+                animation-duration: 2s;
+                animation-iteration-count: 10;
+            }
+            .b3{
+                width:200px;
+                height:200px;
+                position: relative;
+                background-color:yellow;
+                animation-name: myanime3;
+                animation-duration: 2s;
+                animation-iteration-count: 10;
+            }
+            @keyframes myanime1{
+                0%{
+                    left:0px;
+                }
+                50%{
+                    left: 500px;
+                    width: 400px;
+                }
+                100%{
+                    left: 100%;
+                    width:600px;
+                }
+            }
+            @keyframes myanime2{
+                0%{
+                    left:0px;
+                }
+                50%{
+                    left: 300px;
+                    width: 400px;
+                }
+                100%{
+                    left: 100%;
+                    width:600px;
+                }
+            }
+            @keyframes myanime3{
+                0%{
+                    left:0px;
+                }
+                50%{
+                    left: 700px;
+                    width: 400px;
+                }
+                100%{
+                    left: 100%;
+                    width:600px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+    </body>
+</html>
